@@ -1,117 +1,291 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
 
-    <meta name="description" content="A simple travel guide to Indonesia">
-    <meta name="keywords" content="Indonesia, travel, Bali, culture, food">
+    <meta name="description"
+        content="A webpage introducing popular Indonesian foods and food culture.">
+
+    <meta name="keywords"
+        content="Indonesia, Indonesian food, Nasi Goreng, Satay, Rendang">
+
     <meta name="author" content="Student">
 
-    <title>Travel to Indonesia</title>
+    <title>Indonesian Food</title>
 
     <style>
         body {
+            margin: 0;
             font-family: Arial, sans-serif;
-            margin: 40px;
-            line-height: 1.6;
-            background-color: #f5f5f5;
+            background-color: #fff8f0;
+            color: #4a3025;
+            line-height: 1.7;
         }
 
-        h1 {
-            color: #b22222;
+        header {
+            background: linear-gradient(135deg, #e78b55, #f5c16c);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        nav {
+            background-color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: #a6532f;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #d88b22;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: auto;
+            padding: 35px 20px;
+        }
+
+        section {
+            margin-bottom: 45px;
         }
 
         h2 {
-            color: #333333;
+            color: #a6532f;
+            font-size: 28px;
         }
 
-        img {
-            width: 600px;
-            max-width: 100%;
+        .food-list {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .food-card {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 3px 10px #0002;
+            padding: 15px;
+            text-align: center;
+        }
+
+        /* Food pictures */
+        .food-card img {
+            width: 150px;
+            height: 100px;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto 10px;
+            border-radius: 8px;
+        }
+
+        .food-card h3 {
+            margin: 8px 0;
+        }
+
+        .food-card p {
+            margin: 5px;
         }
 
         iframe {
-            max-width: 100%;
+            width: 100%;
+            height: 350px;
+            border: 0;
+            border-radius: 12px;
         }
 
-        .content {
-            background-color: white;
+        footer {
+            background-color: #ffe0c2;
+            text-align: center;
             padding: 25px;
-            border-radius: 10px;
+        }
+
+        @media (max-width: 800px) {
+            .food-list {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 500px) {
+            .food-list {
+                grid-template-columns: 1fr;
+            }
+
+            header h1 {
+                font-size: 32px;
+            }
         }
     </style>
 </head>
 
 <body>
 
-<div class="content">
+    <header>
+        <h1>Indonesian Food 🍜</h1>
+        <p>Delicious flavors from Indonesia</p>
+    </header>
 
-    <h1>Travel to Indonesia</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#foods">Foods</a>
+        <a href="#video">Video</a>
+        <a href="#map">Map</a>
+    </nav>
 
-    <h2>Discover Indonesia</h2>
+    <main>
 
-    <img
-        src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1000&q=80"
-        alt="Beautiful view of Indonesia">
+        <section id="about">
 
-    <p>
-        Indonesia is a beautiful country in Southeast Asia. It is an
-        archipelago with thousands of islands and many different cultures.
-        Indonesia is famous for its beautiful beaches, tropical weather,
-        traditional food, and friendly people. Every region has its own
-        unique culture and attractions, so visitors can have many different
-        experiences when traveling around the country.
-    </p>
+            <h2>Indonesian Food Culture</h2>
 
-    <p>
-        Bali is one of the most popular destinations in Indonesia. Visitors
-        can enjoy beautiful beaches, temples, rice terraces, and traditional
-        Balinese culture. Besides Bali, Jakarta is the capital city and is
-        known for shopping malls, restaurants, museums, and modern city life.
-        Yogyakarta is another interesting destination because of its history,
-        traditional culture, and famous temples.
-    </p>
+            <p>
+                Indonesian food is famous for its strong flavors, colorful ingredients,
+                and variety of spices. Because Indonesia has many different regions and
+                cultures, every area has its own special dishes. Rice is an important
+                part of Indonesian meals, and it is often served with vegetables, meat,
+                eggs, or spicy sauces.
+            </p>
 
-    <p>
-        Indonesian food is also an important part of traveling. Tourists can
-        try many popular dishes such as nasi goreng, satay, rendang, and
-        gado-gado. Indonesian food usually has strong and interesting
-        flavors, and different regions have their own traditional dishes.
-    </p>
+            <p>
+                One of the most popular Indonesian foods is nasi goreng, or fried rice.
+                It can contain vegetables, chicken, eggs, and sweet soy sauce. Another
+                famous dish is satay, which is grilled meat served on small sticks with
+                a delicious peanut sauce. Rendang is also well known around the world.
+                It is a slow-cooked beef dish with coconut milk and many spices.
+            </p>
 
-    <p>
-        Indonesia is a good destination for people who enjoy nature, food,
-        culture, and adventure. Visitors can relax on beaches, explore
-        historical places, try local food, and learn about Indonesian
-        traditions. Traveling to Indonesia can be a memorable experience
-        because every island has something different to offer.
-    </p>
+            <p>
+                Indonesian food is more than just something to eat. Food is an important
+                part of Indonesian family life and celebrations. People often enjoy meals
+                together and share different dishes. Traditional food can also tell us
+                about the history and culture of a region. For visitors, trying local
+                food is one of the best ways to experience Indonesia. The combination of
+                sweet, salty, spicy, and savory flavors makes Indonesian cuisine unique.
+            </p>
 
-    <h2>Indonesia Travel Video</h2>
+        </section>
 
-    <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/VIDEO_ID"
-        title="Travel to Indonesia"
-        allowfullscreen>
-    </iframe>
+        <section id="foods">
 
-    <h2>Map of Indonesia</h2>
+            <h2>Popular Indonesian Foods</h2>
 
-    <iframe
-        src="https://www.google.com/maps?q=Indonesia&output=embed"
-        width="600"
-        height="400"
-        style="border:0;"
-        allowfullscreen=""
-        loading="lazy">
-    </iframe>
+            <div class="food-list">
 
-</div>
+                <div class="food-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1512058564366-18510be2db19"
+                        alt="Nasi Goreng">
+
+                    <h3>Nasi Goreng 🍳</h3>
+
+                    <p>
+                        Indonesian fried rice with vegetables,
+                        egg, and sweet soy sauce.
+                    </p>
+
+                </div>
+
+                <div class="food-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1529563021893-cc83c992d75d"
+                        alt="Satay">
+
+                    <h3>Satay 🍢</h3>
+
+                    <p>
+                        Grilled meat served with a rich
+                        and delicious peanut sauce.
+                    </p>
+
+                </div>
+
+                <div class="food-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1601050690597-df0568f70950"
+                        alt="Rendang">
+
+                    <h3>Rendang 🥩</h3>
+
+                    <p>
+                        Slow-cooked beef with coconut milk
+                        and traditional spices.
+                    </p>
+
+                </div>
+
+                <div class="food-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1547592180-85f173990554"
+                        alt="Indonesian noodles">
+
+                    <h3>Mie 🍜</h3>
+
+                    <p>
+                        Indonesian noodles prepared with
+                        vegetables, meat, and spices.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="video">
+
+            <h2>Indonesian Food Video</h2>
+
+            <iframe
+                src="https://www.youtube.com/embed/9QKq1q9k5xI"
+                title="Indonesian Food Video"
+                allowfullscreen>
+            </iframe>
+
+        </section>
+
+        <section id="map">
+
+            <h2>Indonesia Food Map</h2>
+
+            <p>
+                Indonesia has many different food traditions across its islands.
+                Here is the location of Indonesia on the map.
+            </p>
+
+            <iframe
+                src="https://www.google.com/maps?q=Indonesia&output=embed"
+                title="Map of Indonesia"
+                allowfullscreen
+                loading="lazy">
+            </iframe>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Indonesian Food 🍜 | Created by Student</p>
+    </footer>
 
 </body>
 </html>
-```
